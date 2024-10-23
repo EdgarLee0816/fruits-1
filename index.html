@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />    
+       
+    <title>과일 목록</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      .red {background: red; padding:20px; text-align: center;}
+    </style>
+  </head>
+  <body>
+    
+    <div id="layout"></div>
+
+    <script type="text/babel">
+
+      const x = (
+        <>
+
+        <h2 className={'red'}>구매한 과일 목록</h2>
+
+        <ul>
+          <li>오렌지</li>
+          <li>파인애플</li>
+          <li>사과</li>          
+        </ul>
+
+        </>
+      );
+      
+      const y = ReactDOM.createRoot(document.getElementById('layout'));
+      y.render(x);
+
+    </script>
+
+   
+  </body>
+</html>
